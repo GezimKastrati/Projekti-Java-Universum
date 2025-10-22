@@ -1,46 +1,44 @@
-# Test Management API - Personalized Edition
 
-**Author:** Student - College Assignment  
-**Project:** Continuation and personalization of existing Spring Boot application
 
-## 🎯 Project Overview
+
 
 This Spring Boot REST API project was originally scaffolded for a college assignment. I have continued the implementation and added significant personalizations to demonstrate my understanding of Spring Boot development.
 
-## ✨ Personalizations & Features Implemented
 
-### 🔧 Core Functionality
+
+ Core Functionality
 - **Complete CRUD Operations** for Test entity management
 - **RESTful API Design** with proper HTTP status codes
 - **Data Transfer Objects (DTOs)** with validation
 - **Entity Mapping** between DTOs and JPA entities
 - **Pagination & Sorting** support for data retrieval
 
-### 🛡️ Security & Error Handling
+
+Security & Error Handling
 - **Global Exception Handler** with consistent `ErrorResponse` format
 - **Dual Security Configuration:**
   - Keycloak OAuth2/JWT (production)
   - Simple in-memory auth (development)
+
 - **Input Validation** with proper error messages
 
-### 📚 API Documentation
-- **Swagger/OpenAPI Integration** with personalized metadata
+ **Swagger/OpenAPI Integration** with personalized metadata
 - **Interactive API Documentation** at `/swagger-ui.html`
 - **Custom API Info** showing personalization details
 
-### 🧪 Testing & Quality
+ Testing & Quality
 - **Unit Tests** for service layer (`TestServiceTest`)
 - **Integration Tests** for controller layer (`TestControllerTest`)
 - **MockMvc Testing** for HTTP endpoints
 - **Test Coverage** for critical business logic
 
-### 🔧 Development Features
+ Development Features
 - **Health Check Endpoint** (`/api/health`) with personalization info
 - **Seed Data Endpoint** (`/api/data/seed`) for quick testing
 - **H2 Database Support** for simplified local development
 - **Multiple Profiles** (production with MariaDB, development with H2)
 
-## 🚀 How to Run
+##  How to Run
 
 ### Prerequisites
 - Java 17+ installed
@@ -61,7 +59,7 @@ docker-compose up -d
 .\gradlew.bat bootRun
 ```
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 ### Core Endpoints
 - `GET /api/health` - Health check with personalization info
@@ -76,7 +74,7 @@ docker-compose up -d
 - `GET /swagger-ui.html` - Interactive API documentation
 - `GET /v3/api-docs` - OpenAPI specification
 
-## 🔐 Authentication
+## Authentication
 
 ### Development Mode (simple-auth profile)
 - **Username:** `student`
@@ -88,7 +86,7 @@ docker-compose up -d
 - **Realm:** `backend`
 - **Client:** `rest-api`
 
-## 🗄️ Database Configuration
+## Database Configuration
 
 ### Development (H2 In-Memory)
 ```properties
@@ -101,7 +99,7 @@ spring.profiles.active=simple-auth
 spring.datasource.url=jdbc:mariadb://localhost:3306/TestManagement_db
 ```
 
-## 🧪 Testing
+## Testing
 
 Run tests with:
 ```bash
@@ -114,7 +112,7 @@ Run tests with:
 - Exception handling validation
 - CRUD operations verification
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 src/main/java/com/backend/testManagement/
@@ -132,7 +130,7 @@ src/main/java/com/backend/testManagement/
 └── services/        # Business logic
 ```
 
-## 🎓 Learning Outcomes Demonstrated
+## Learning Outcomes Demonstrated
 
 1. **Spring Boot Mastery:** Configuration, auto-configuration, profiles
 2. **REST API Design:** Proper HTTP methods, status codes, pagination
@@ -153,5 +151,3 @@ src/main/java/com/backend/testManagement/
 - ✅ **Multiple Profiles** - Development vs production configurations
 
 ---
-
-**Note:** This project demonstrates continuation and personalization of an existing codebase, showcasing ability to understand, extend, and improve existing Spring Boot applications while maintaining code quality and adding meaningful features.
