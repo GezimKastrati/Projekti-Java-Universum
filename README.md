@@ -141,13 +141,13 @@ src/main/java/com/backend/testManagement/
 7. **Database Integration:** JPA, multiple database support
 8. **DevOps Basics:** Docker, profiles, environment configuration
 
-## 🔄 Recent Personalizations Added
+##  Recent Personalizations Added
 
-- ✅ **Unit & Integration Tests** - Comprehensive test suite
-- ✅ **Simplified Security Config** - Easy local development
-- ✅ **H2 Database Support** - No external dependencies needed
-- ✅ **Health & Seed Endpoints** - Development utilities
-- ✅ **Enhanced Documentation** - Complete API documentation
-- ✅ **Multiple Profiles** - Development vs production configurations
+-  **Unit & Integration Tests** - Comprehensive test suite
+-  **Simplified Security Config** - Easy local development
+-  **H2 Database Support** - No external dependencies needed
+-  **Health & Seed Endpoints** - Development utilities
+-  **Enhanced Documentation** - Complete API documentation
+-  **Multiple Profiles** - Development vs production configurations
 
 ---
